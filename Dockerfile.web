@@ -1,0 +1,2 @@
+FROM nginx
+COPY social-web/dist/usr/share/nginx/html

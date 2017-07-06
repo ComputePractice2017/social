@@ -1,0 +1,14 @@
+FROM golang
+
+ADD social-server /go/src/github.com/ComputePractice2017/social-server 
+
+RUN go get "github.com/gorilla/mux"
+RUN go get "github.com/gorilla/handlers"
+RUN go get "gopkg.in/gorethink/gorethink.v3"
+RUN go install github.com/ComputePractice2017/social-server
+
+ENTRYPOINT /go/bin/social-server
+
+ENV RETHINKDB_HOST db
+
+EXPOSE 8000

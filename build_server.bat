@@ -1,0 +1,1 @@
+docker build -t social-server -f Dockerfile.server .
