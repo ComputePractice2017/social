@@ -1,0 +1,6 @@
+[submodule "social-server"]
+	path = social-server
+	url = https://github.com/ComputePractice2017/social-server.git
+[submodule "social-web"]
+	path = social-web
+	url = https://github.com/ComputePractice2017/social-web.git
